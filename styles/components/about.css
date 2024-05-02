@@ -1,159 +1,157 @@
 .about {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .about__content {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
 }
 
 .about__title {
-    font-size: var(--size-2xl);
-    color: var(--clr-light);
+  font-size: var(--size-2xl);
+  color: var(--clr-light);
 }
 
 .about__description {
-    max-width: 60ch;
-    font-size: var(--size-sm);
-    color: var(--clr-slate600);
+  max-width: 60ch;
+  font-size: var(--size-sm);
+  color: var(--clr-slate600);
 }
 
 .about__hr {
-    border-color: var(--clr-slate800);
+  border-color: var(--clr-slate800);
 }
 
 .about__subtitle {
-    font-size: var(--size-sm);
-    color: var(--clr-slate400);
+  font-size: var(--size-sm);
+  color: var(--clr-slate400);
 }
 
 .about__ul {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    list-style-type: '👍🏾';
-    padding-left: 1em;
-    flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  list-style-type: "👍🏾";
+  padding-left: 1em;
+  flex: 1;
 }
 
 .about__ul-container {
-    display: flex;
-    
+  display: flex;
 }
 
 .about__list {
-    font-size: var(--size-sm);
-    color: var(--clr-slate600);
+  font-size: var(--size-sm);
+  color: var(--clr-slate600);
 }
 
 .about__list::before {
-    content: '';
-    margin-right: 0.5em;
+  content: "";
+  margin-right: 0.5em;
 }
 
-/* xs */
+/* Responsive Adjustments */
 @media (min-width: 475px) {
-    .about {
-        gap: 1.5rem;
-    }
+  .about {
+    gap: 1.5rem;
+  }
 
-    .about__content {
-        gap: 1.25rem;
-    }
+  .about__content {
+    gap: 1.25rem;
+  }
 
-    .about__title {
-        font-size: var(--size-3xl);
-    }
+  .about__title {
+    font-size: var(--size-3xl);
+  }
 
-    .about__description {
-        font-size: var(--size-base);
-    }
+  .about__description {
+    font-size: var(--size-base);
+  }
 
-    .about__subtitle {
-        font-size: var(--size-base);
-    }
+  .about__subtitle {
+    font-size: var(--size-base);
+  }
 
-    .about__list {
-        font-size: var(--size-base);
-    }
+  .about__list {
+    font-size: var(--size-base);
+  }
 }
 
-/* sm */
 @media (min-width: 640px) {
-    .about__img-wrapper {
-        margin: 0 auto;
-    }
-    
-    .about__img {
-        width: 28rem;
-    }
+  .about__img-wrapper {
+    margin: 0 auto;
+  }
+
+  .about__img {
+    width: auto; /* Allows the image to grow */
+    max-width: 28rem; /* Sets an upper limit for smaller screens */
+  }
 }
 
-/* md */
 @media (min-width: 768px) {
-
 }
 
-/* lg */
 @media (min-width: 1024px) {
-    .about {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
+  .about {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 
-    .about__title {
-        font-size: var(--size-4xl);
-    }
+  .about__content {
+    flex: 2;
+  }
 
-    .about__description {
-        font-size: var(--size-lg);
-    }
+  .about__img-wrapper {
+    flex: 1;
+  }
 
-    .about__subtitle {
-        font-size: var(--size-lg);
-    }
+  .about__title {
+    font-size: var(--size-4xl);
+  }
 
-    .about__list {
-        font-size: var(--size-lg);
-    }
+  .about__description {
+    font-size: var(--size-lg);
+  }
 
-    .about__content {
-        margin: auto;
-    }
+  .about__subtitle {
+    font-size: var(--size-lg);
+  }
+
+  .about__list {
+    font-size: var(--size-lg);
+  }
 }
 
-/* xl  */
 @media (min-width: 1280px) {
-    .about__content {
-        gap: 1.75rem;
-    }
-    
-    .about__title {
-        font-size: var(--size-5xl);
-    }
+  .about__content {
+    gap: 1.75rem;
+  }
 
-    .about__description {
-        font-size: var(--size-xl);
-    }
+  .about__title {
+    font-size: var(--size-5xl);
+  }
 
-    .about__subtitle {
-        font-size: var(--size-xl);
-    }
+  .about__description {
+    font-size: var(--size-xl);
+  }
 
-    .about__list {
-        font-size: var(--size-xl);
-    }
+  .about__subtitle {
+    font-size: var(--size-xl);
+  }
 
-    .about__img{
-        width: 30.5rem;
-    }
+  .about__list {
+    font-size: var(--size-xl);
+  }
+
+  .about__img {
+    width: auto;
+    max-width: 30.5rem;
+  }
 }
 
-/* 2xl */
 @media (min-width: 1536px) {
- 
 }
